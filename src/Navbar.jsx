@@ -21,8 +21,12 @@ const Navbar = () => {
             <li className="cursor-pointer hover:text-[#96FF16] ">
               <Link to="/">Home</Link>
             </li>
-            <li className="cursor-pointer hover:text-[#96FF16]">About</li>
-            <li className="cursor-pointer hover:text-[#96FF16]">Our Services</li>
+            <li className="cursor-pointer hover:text-[#96FF16]">
+              <Link to="/about"> About </Link>
+            </li>
+            <li className="cursor-pointer hover:text-[#96FF16]">
+              <Link to="/ourService">Our Services</Link>
+            </li>
             <li className="cursor-pointer hover:text-[#96FF16]">Facility</li>
             <li className="cursor-pointer hover:text-[#96FF16]">
               <Link to="/blog">Blog</Link>
@@ -62,17 +66,23 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden bg-[#230e01] text-white shadow-lg">
           <ul className="flex flex-col items-center space-y-4 py-6">
-            <li> 
+            <li>
               <Link to="/">Home</Link>
             </li>
-            <li>About</li>
-            <li>Our Services</li>
-            <li>Facility</li>
+            <li>
+              <Link to="/about"> About </Link>
+            </li>
+            <li>
+              <Link to="/ourService">Our Services</Link>
+            </li>
+            <li>
+              <Link to="/ourService">Facility</Link>
+            </li>
             <li>
               <Link to="/blog">Blog</Link>
             </li>
             <li>
-               <Link to="/contact">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
