@@ -6,6 +6,7 @@ import Contact from "./pages/contact/Contact";
 import Blog from "./pages/blog/Blog";
 import About from "./pages/home/about/About";
 import OurService from "./pages/ourService/OurService";
+import Facility from "./pages/facility/Facility";
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/ourService" element={<OurService />} />
+        <Route path="/facility" element={<Facility />} />
       </Routes>
       <Footer />  {/*FOOTER Visable All page*/}
     </Router>

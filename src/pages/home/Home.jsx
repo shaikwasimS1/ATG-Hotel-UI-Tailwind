@@ -1,7 +1,7 @@
 import Hero from "../../assets/heroImg/hero.svg";
-import Arrow from "../../assets/arrow/Arrownorth.svg";
+
 import Button from "../../button/Button";
-import { BedDouble, Palmtree, Building2, Sparkles, Utensils, BadgePercent, ArrowRight, CalendarDays, ChevronDown, Star, Headphones, CalendarCheck, House, Wifi, AirVent, Waves, Dumbbell, Car, WashingMachine } from "lucide-react";
+import { BedDouble, Palmtree, Building2, Sparkles, Utensils, BadgePercent, ArrowRight, CalendarDays, ChevronDown, Star, Headphones, CalendarCheck, House, Wifi, AirVent, Waves, Dumbbell, Car, WashingMachine,MoveRight } from "lucide-react";
 
 
 
@@ -75,7 +75,7 @@ const Home = () => {
                     <Button
                         text="Explore Now "
                         className="flex items-center gap-2 px-6 py-2 border border-[#D8B18D] text-white text-lg sm:text-xl md:text-[20px] hover:bg-[#D8B18D] hover:text-black transition-all duration-300 mt-5 mb-5"
-                        icon={Arrow}
+                        icon ={<MoveRight/>}
                     />
                 </div>
             </section>
@@ -188,7 +188,7 @@ const Home = () => {
                                     </p>
 
                                     <div className="flex items-center gap-2 font-medium cursor-pointer">Read More
-                                        <ArrowRight size={16} />
+                                        <ArrowRight size={21} className="ms-[15px]" />
                                     </div>
                                 </div>
                             );
